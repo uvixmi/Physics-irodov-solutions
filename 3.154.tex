@@ -1,0 +1,27 @@
+\testCom
+{%Номер задачи
+	3.154
+}
+{%Условие
+	условие
+}
+{%Дано
+	дано
+}
+{%Найти
+	найти
+}
+{%Решение
+	Составим закон Ома для переменного тока для каждого контура:
+	$\frac{d}{dt} = \left\{\begin{array}{l l}
+			I_1(t) (i \omega L_1 + \frac{1}{i \omega c}) = - L_{12} \frac{d I_2}{dt} \\
+			I_2(t) i \omega L_2  = - L_{12} \frac{d I_1}{dt} 
+			\end{array}\right.$\\
+	$\frac{d I_2}{dt} = - \frac{L_{12}}{i \omega L_{12}} \frac{d^2 I_1}{dt^2}$, тогда\\
+	$I_1(t)(i \omega L_1 + \frac{1}{i \omega c}) = - \frac{i L_{12}^2}{\omega L_2} \frac{d^2 I_1}{dt^2}$\\
+	$\der{I_1}{t}{2} + \frac{\omega L_2}{i L_{12}^2} \left(i \omega L_1 + \frac{1}{i \omega C} \right) I_1 = 0$\\
+	Из вида этого уравнения видно, что\\
+	$\omega^2 = \frac{\omega^2 L_1 L_2}{L_{12}^2} - \frac{L_2}{CL_{12}^2}, \omega^2 (L_1 L_2 - L_{12}^2) = \frac{L_2}{C}$\\
+	$\omega^2 = \frac{L_2}{(L_1 L_2 - L_{12}^2)C}$\\
+}
+

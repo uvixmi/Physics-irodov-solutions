@@ -1,0 +1,53 @@
+\ProvidesPackage{myphyspack}
+
+\usepackage{ucs}
+\usepackage[utf8x]{inputenc} 
+\usepackage[english, russian]{babel}
+\usepackage{mathtext}
+\usepackage{amsthm}
+\usepackage{amsmath} 
+\usepackage{amssymb} 
+\usepackage{paralist}
+\usepackage{graphicx}
+\usepackage{setspace} 
+\usepackage{cancel}
+
+\binoppenalty=10000
+
+\newcommand{\testCom}[5]{
+#1\\ 
+\indent #2 \\ \\
+
+ \begin{tabular}{ l | l}
+\setlength{\parindent}{0cm}
+ Дано		 & Решение\\
+  \begin{minipage}[t]{37mm}
+	\begin{tabular}{ p{35mm} } 
+	 #3\\
+	\hline
+Найти:\\
+ 	 #4\\ 
+	\end{tabular}
+  \end{minipage}    &   
+  \begin{minipage}{120mm}
+	%\begin{flushleft} 
+	\begin{spacing}{1.2} 
+		#5
+	\end{spacing}
+	%\end{flushleft} 
+	\end{minipage} 
+ \end{tabular}
+}
+
+\newcommand{\abs}[1]{\left | #1 \right |}
+\newcommand{\abss}[1]{|#1|}
+
+\newcommand{\der}[3]{\frac{d^{#3}#1}{d#2^{#3}}}
+\newcommand{\pder}[3]{\frac{\partial^{#3}#1}{\partial #2^{#3}}}
+
+\newcommand{\ddelta}{\small \displaystyle\Delta}
+\newcommand{\assume}{\rfloor}
+\newcommand{\avr}[1]{\left \langle #1 \right \rangle}
+
+\renewcommand{\ne}[1]{#1\nobreak\discretionary{}%
+            {\hbox{\mathsurround=0pt #1}}{}}
